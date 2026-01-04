@@ -1,7 +1,7 @@
 import { Router } from "express";
-import { DeliveriesLogsController } from "@/controllers/deliveries-logs-controller";
-import { ensureAuthenticated } from "@/middlewares/ensure-authenticated";
-import { verifyUserAuthorization } from "@/middlewares/verify-user-authorization";
+import { DeliveriesLogsController } from "../controllers/deliveries-logs-controller.js";
+import { ensureAuthenticated } from "../middlewares/ensure-authenticated.js";
+import { verifyUserAuthorization } from "../middlewares/verify-user-authorization.js";
 
 const deliveriesLogsRoutes = Router();
 const deliveriesLogsController = new DeliveriesLogsController();
